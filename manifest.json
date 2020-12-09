@@ -1,0 +1,18 @@
+{
+  "name": "Fake Form Filler",
+  "version": "1.0",
+  "description": "Populate a form with fake details",
+  "manifest_version": 2,
+  "permissions": [
+    "contextMenus"
+  ],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://*/*", "https://*/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
