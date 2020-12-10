@@ -99,7 +99,7 @@ function generateFakeSurName() {
 }
 
 function generateDomainName(companyName) {
-    return companyName.trim().split(' ')[0].toLowerCase() + '.com';
+    return companyName.trim().split(' ')[0].toLowerCase().replace(/\./g, '') + '.com';
 }
 
 function generateFakeCompanyName() {
